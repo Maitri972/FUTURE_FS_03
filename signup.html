@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amazon Registration</title>
+    <link rel="stylesheet" href="auth.css" />
+  </head>
+  <body>
+
+    <a href="#">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" class="logo" width="103px" alt="Amazon Logo" />
+    </a>
+    
+    <div class="auth-container">
+      <h1 class="auth-title">Create account</h1>
+      
+      <p class="input-label">Your name</p>
+      <input type="text" id="username" placeholder="First and last name" />
+
+      <p class="input-label">Mobile number or email</p>
+      <input type="text" id="useremail" />
+      
+      <p class="input-label">Password</p>
+      <input type="password" id="userpassword" placeholder="At least 6 characters" />
+      
+      <button type="button" id="continueBtn">Continue</button>
+      
+      <p class="auth-notice">
+        By continuing, you agree to Amazon's <span>Conditions of Use</span> and <span>Privacy Notice.</span>
+      </p>
+      
+      <hr>
+      
+      <h4>Buying for work?</h4>
+      <p class="auth-bussiness"><span>Shop on Amazon Business</span></p>
+      
+      <hr>
+
+      <p class="auth-notice">Already have an account? <span onclick="window.location.href='signin.html'">Sign in &#9654;</span></p>
+    </div>
+    
+    <footer>
+      <div class="footer-links">
+         <a href="#">Conditions of Use</a>
+         <a href="#">Privacy Notice</a>
+         <a href="#">Help</a>
+      </div>
+      <p class="footer-copyright">&copy; 1996-2026, Amazon.com, Inc. or its affiliates</p>
+    </footer>
+
+    <script>
+      document.getElementById("continueBtn").addEventListener("click", function() {
+        let name = document.getElementById("username").value.trim();
+        let email = document.getElementById("useremail").value.trim();
+        let password = document.getElementById("userpassword").value.trim();
+
+        if (name === "" || email === "" || password === "") {
+            alert("Please fill in all the details!");
+            return;
+        }
+
+        if (password.length < 6) {
+            alert("Password must be at least 6 characters long!");
+            return;
+        }
+
+        alert("Congratulations! Your account has been created successfully.");
+        window.location.href = "signin.html"; 
+      });
+    </script>
+
+  </body>
+</html>

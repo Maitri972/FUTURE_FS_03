@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: "Outfit", sans-serif;
+}
+
+body{
+   background: #fff;
+   min-height: 100vh;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.logo{
+   margin-top: 20px;
+   margin-bottom: 20px;
+   display: block;
+}
+
+/* મુખ્ય બોક્સ ડિઝાઇન */
+.auth-container{
+   width: 350px;
+   border: 1px solid #d2d2d2;
+   padding: 20px 26px;
+   border-radius: 8px;
+   text-align: left;
+   background: #fff;
+}
+
+.auth-title{
+   font-size: 28px;
+   font-weight: 400;
+   margin-bottom: 15px;
+}
+
+.input-label{
+   font-size: 13px;
+   font-weight: 700;
+   margin-top: 15px;
+   margin-bottom: 5px;
+}
+
+.auth-container input{
+   width: 100%;
+   height: 31px;
+   padding: 3px 7px;
+   border-radius: 3px;
+   border: 1px solid #a0a0a0;
+   font-size: 13px;
+   outline: none;
+}
+
+.auth-container input:focus{
+   border-color: #e77600;
+   box-shadow: 0 0 3px 2px rgba(228, 121, 17, .5);
+}
+
+.auth-container button{
+   width: 100%;
+   height: 31px;
+   margin: 15px 0;
+   background: #ffd814;
+   border: 1px solid #fcd200;
+   border-radius: 8px;
+   cursor: pointer;
+   font-size: 13px;
+}
+
+.auth-container button:hover{
+   background: #f7ca00;
+}
+
+.auth-notice{
+   font-size: 12px;
+   line-height: 1.5;
+}
+
+.auth-notice span, .auth-bussiness span, .auth-help span {
+   color: #0066c0;
+   cursor: pointer;
+}
+
+.auth-notice span:hover, .auth-bussiness span:hover, .auth-help span:hover {
+   color: #c45500;
+   text-decoration: underline;
+}
+
+.auth-help{
+   font-size: 13px;
+   margin: 20px 0;
+}
+
+.auth-container hr{
+   border: none;
+   height: 1px;
+   background: #e7e7e7;
+   margin: 15px 0;
+}
+
+.auth-container h4{
+   margin-bottom: 5px;
+   font-size: 13px;
+}
+
+.auth-bussiness{
+   font-size: 13px;
+}
+
+/* New to Amazon સેક્શન */
+.auth-divider {
+   width: 350px;
+   margin: 20px 0;
+   text-align: center;
+   position: relative;
+}
+
+.auth-divider::before {
+   content: "";
+   position: absolute;
+   top: 50%;
+   left: 0;
+   right: 0;
+   height: 1px;
+   background: #e7e7e7;
+   z-index: 1;
+}
+
+.auth-divider p {
+   display: inline-block;
+   background: #fff;
+   padding: 0 10px;
+   font-size: 12px;
+   color: #767676;
+   position: relative;
+   z-index: 2;
+}
+
+.auth-secondary-btn{
+   width: 350px;
+   height: 30px;
+   font-size: 13px;
+   background: #fff;
+   border-radius: 8px;
+   border: 1px solid #8d9096;
+   cursor: pointer;
+   box-shadow: 0 2px 5px 0 rgba(213,217,217,.5);
+}
+
+.auth-secondary-btn:hover{
+   background: #f7fafa;
+}
+
+/* Footer Section */
+footer{
+   width: 100%;
+   margin-top: auto;
+   padding: 30px 0;
+   background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.03));
+   border-top: 1px solid #eaeded;
+   font-size: 11px;
+   text-align: center;
+}
+
+.footer-links{
+   display: flex;
+   justify-content: center;
+   gap: 30px;
+   margin-bottom: 10px;
+}
+
+.footer-links a{
+   text-decoration: none;
+   color: #0066c0;
+}
+
+.footer-links a:hover{
+   color: #c45500;
+   text-decoration: underline;
+}
+
+.footer-copyright{
+   color: #555;
+}
