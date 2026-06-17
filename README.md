@@ -3,7 +3,7 @@
 
 May Caffeine is a premium, high-end landing page crafted for an avant-garde specialty coffee roastery. Built using semantic architectural design philosophies, it features a responsive layout, a luxurious dark-themed user experience, interactive elements, and an uncompromised, balanced aesthetic fluid grid.
 
-🔗 **Live Deployment URL:** live link updated here
+🔗 **Live Deployment URL:** https://future-fs-03-ruddy-phi.vercel.app/
 
 ---
 
