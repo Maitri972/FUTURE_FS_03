@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>May Caffeine | Elite Roastery Experience</title>
+    <!-- Font Awesome for Premium Icon Assets -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+
+    <!-- Preloader Canvas Screen -->
+    <div id="preloader">
+        <div class="preloader-content">
+            <div class="coffee-cup">
+                <div class="steam-container">
+                    <div class="steam-line"></div>
+                    <div class="steam-line"></div>
+                    <div class="steam-line"></div>
+                </div>
+                <div class="cup"></div>
+            </div>
+            <h2 class="preloader-title">May Caffeine</h2>
+            <div class="progress-bar"><div class="progress-fill"></div></div>
+        </div>
+    </div>
+
+    <!-- Sticky Glassmorphism Navigation Structure -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">May <span>Caffeine</span></a>
+            
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">Our Essence</a></li>
+                <li><a href="#menu">The Reserve</a></li>
+                <li><a href="#gallery" class="active">The Gallery</a></li>
+                <li><a href="#testimonials">Reviews</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button id="theme-toggle" aria-label="Toggle Theme Surface">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <a href="#menu" class="btn btn-nav">Reserve Table</a>
+                <div class="menu-toggle" id="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Interactive Video Cinematic Hero Canvas -->
+    <section id="hero" class="hero-section">
+        <div class="hero-video-wrapper">
+            <video autoplay loop muted playsinline poster="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?q=80&w=1600&auto=format&fit=crop" class="hero-video-element">
+                <source src="https://assets.mixkit.co/videos/preview/mixkit-pouring-hot-coffee-into-a-cup-42217-large.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="hero-overlay"></div>
+        
+        <div class="floating-particles">
+            <i class="fas fa-seedling particle p1"></i>
+            <i class="fas fa-circle particle p2"></i>
+            <i class="fas fa-seedling particle p3"></i>
+            <i class="fas fa-circle particle p4"></i>
+        </div>
+
+        <div class="hero-content text-center">
+            <span class="hero-subtitle">The Connoisseur Sanctuary</span>
+            <h1 class="hero-title">Where Roasting Becomes Fine Art</h1>
+            
+            <div class="typing-container">
+                <span class="static-text">Settle For </span>
+                <span id="typing-text" class="dynamic-text"></span>
+            </div>
+            
+            <p class="hero-description">Indulge in an exquisite sensory journey sculpted by master roasters. Every single micro-lot extraction is curated to mathematical perfection.</p>
+            <div class="hero-buttons">
+                <a href="#menu" class="btn btn-primary">Explore The Reserve</a>
+                <a href="#gallery" class="btn btn-secondary">Tour Spatial Design</a>
+            </div>
+        </div>
+        
+        <div class="scroll-down">
+            <a href="#about"><i class="fas fa-chevron-down"></i></a>
+        </div>
+    </section>
+
+    <!-- Structural Brand Narrative Grid -->
+    <section id="about" class="about-section reveal">
+        <div class="container grid grid-2">
+            <div class="about-img-container">
+                <div class="about-border-decor"></div>
+                <div class="about-image-wrapper card3d-inner">
+                    <div class="steam-effect-ambient">
+                        <span style="--i:1;"></span>
+                        <span style="--i:3;"></span>
+                        <span style="--i:2;"></span>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=800&auto=format&fit=crop" alt="Premium Espresso Crafting Process" class="about-img">
+                </div>
+            </div>
+            
+            <div class="about-text-content">
+                <span class="section-tag">Established 2018</span>
+                <h2 class="section-title">A Ritual of Uncompromising Purity</h2>
+                <p class="section-desc">At May Caffeine, we reinvent coffee rituals. Our beans are responsibly sourced from top-tier microlots in Ethiopia, Colombia, and Sumatra. Roasted with rigorous precision and brewed with artisan passion, we elevate your daily caffeine intake into an absolute art form.</p>
+                
+                <div class="about-features">
+                    <div class="about-feat-item">
+                        <div class="feat-icon-wrapper"><i class="fas fa-award"></i></div>
+                        <div>
+                            <h4>Global Top 1% Microlots</h4>
+                            <p>Strictly graded specialty grains curated by certified Q-Graders.</p>
+                        </div>
+                    </div>
+                    <div class="about-feat-item">
+                        <div class="feat-icon-wrapper"><i class="fas fa-leaf"></i></div>
+                        <div>
+                            <h4>Ethical Direct Trade Chain</h4>
+                            <p>100% transparent crop-to-cup financial premium pipelines.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3D Gyroscopic Feature Grid Showcase -->
+    <section class="why-choose-us reveal">
+        <div class="container text-center">
+            <span class="section-tag">The Architectural Standard</span>
+            <h2 class="section-title">The Three Pillars of May</h2>
+            
+            <div class="grid grid-3 card-container">
+                <div class="product-card3d glass-card">
+                    <div class="card3d-inner">
+                        <div class="icon-box"><i class="fas fa-fire"></i></div>
+                        <h3>Thermal Profiling</h3>
+                        <p>Micro-batch thermodynamic optimization patterns locking in trace volatile aromatics.</p>
+                    </div>
+                </div>
+                <div class="product-card3d glass-card">
+                    <div class="card3d-inner">
+                        <div class="icon-box"><i class="fas fa-tint"></i></div>
+                        <h3>Molecular Filtration</h3>
+                        <p>PPM-calibrated mineral extraction balance configured exactly to origin density.</p>
+                    </div>
+                </div>
+                <div class="product-card3d glass-card">
+                    <div class="card3d-inner">
+                        <div class="icon-box"><i class="fas fa-gem"></i></div>
+                        <h3>Avant-Garde Space</h3>
+                        <p>An architecturally stunning sanctuary designed for creative decompression.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Curated Interactive Menu Matrix -->
+    <section id="menu" class="menu-section reveal">
+        <div class="container">
+            <div class="text-center">
+                <span class="section-tag">Liquid Geometry</span>
+                <h2 class="section-title">The Current Signature Rotation</h2>
+                
+                <div class="filter-container">
+                    <button class="filter-btn active" data-filter="all">All Profiles</button>
+                    <button class="filter-btn" data-filter="hot">Hot Extractions</button>
+                    <button class="filter-btn" data-filter="cold">Cryo Crafts</button>
+                    <button class="filter-btn" data-filter="signature">Limited Signatures</button>
+                </div>
+            </div>
+
+            <div class="grid grid-2 menu-grid">
+                <div class="menu-item glass-card mix hot">
+                    <div class="menu-details">
+                        <div class="menu-title-row">
+                            <h4>Gold Velvet Latte</h4>
+                            <span class="menu-price">$7.50</span>
+                        </div>
+                        <p class="menu-desc">Double espresso, organic local honey, Madagascar vanilla, real 24k gold leaf flakes.</p>
+                    </div>
+                </div>
+                
+                <div class="menu-item glass-card mix cold">
+                    <div class="menu-details">
+                        <div class="menu-title-row">
+                            <h4>Nitro Cascara Cold Brew</h4>
+                            <span class="menu-price">$6.80</span>
+                        </div>
+                        <p class="menu-desc">Infused with coffee cherry tea extract, nitrogen-charged for ultra-creamy head texture.</p>
+                    </div>
+                </div>
+                
+                <div class="menu-item glass-card mix signature">
+                    <div class="menu-details">
+                        <div class="menu-title-row">
+                            <h4>Smoked Rosemary Affogato</h4>
+                            <span class="menu-price">$9.00</span>
+                        </div>
+                        <p class="menu-desc">Tahitian vanilla bean gelato drowned in over-iced single origin shot, flamed rosemary smoke.</p>
+                    </div>
+                </div>
+                
+                <div class="menu-item glass-card mix hot">
+                    <div class="menu-details">
+                        <div class="menu-title-row">
+                            <h4>Ethiopian Yirgacheffe V60</h4>
+                            <span class="menu-price">$6.00</span>
+                        </div>
+                        <p class="menu-desc">V60 clean extraction method exhibiting crisp notes of jasmine, bergamot, and sweet blueberry.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Deep-Perspective Dynamic Premium 3D Product Shelf -->
+    <section class="best-sellers reveal">
+        <div class="container">
+            <div class="text-center">
+                <span class="section-tag">Exclusive Retail Reserves</span>
+                <h2 class="section-title">Bring The Laboratory Home</h2>
+            </div>
+            
+            <div class="grid grid-3 card-container">
+                <div class="product-card3d glass-card">
+                    <div class="card3d-inner">
+                        <div class="product-badge">Top Origin</div>
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1559056199-641a0ac8b55e?q=80&w=500&auto=format&fit=crop" alt="May Obsidian Coffee Bag Asset">
+                        </div>
+                        <div class="product-info">
+                            <h3>May Obsidian Blend</h3>
+                            <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                            <p class="price">$24.00 <span>/ 250g</span></p>
+                            <button class="btn btn-primary btn-sm">Acquire Allocation</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card3d glass-card">
+                    <div class="card3d-inner">
+                        <div class="product-badge">Rare Allocation</div>
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?q=80&w=500&auto=format&fit=crop" alt="Geisha Estate Reserve Coffee Beans Asset">
+                        </div>
+                        <div class="product-info">
+                            <h3>Geisha Estate Reserve</h3>
+                            <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
+                            <p class="price">$42.00 <span>/ 250g</span></p>
+                            <button class="btn btn-primary btn-sm">Acquire Allocation</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card3d glass-card">
+                    <div class="card3d-inner">
+                        <div class="product-badge">Custom Vault</div>
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?q=80&w=500&auto=format&fit=crop" alt="Ethereal Glass Syphon Extraction Asset">
+                        </div>
+                        <div class="product-info">
+                            <h3>Ethereal Brew Kit</h3>
+                            <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                            <p class="price">$35.00 <span>/ Set</span></p>
+                            <button class="btn btn-primary btn-sm">Acquire Allocation</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PERFECTED COFFEE GALLERY MATRIX -->
+    <!-- Completely pruned all ice cream code loops and white gaps for structural balance -->
+    <section id="gallery" class="gallery-section reveal">
+        <div class="container-fluid p-0">
+            <div class="text-center gallery-header-margin">
+                <span class="section-tag">Aesthetic Projections</span>
+                <h2 class="section-title">The Roastery Design Blueprint</h2>
+            </div>
+            
+            <div class="premium-gallery-matrix">
+                <!-- Unit 1: The Roasting Bay (Large Feature Block) -->
+                <div class="gallery-cell element-large">
+                    <img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?q=80&w=1000&auto=format&fit=crop" alt="High precision coffee roasters equipment asset">
+                    <div class="gallery-spatial-card">
+                        <h3>The Roasting Bay</h3>
+                        <p>Custom atmospheric localized thermodynamic gas chambers.</p>
+                        <span class="gallery-link-indicator"><i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </div>
+
+                <!-- Unit 2: The Slow Bar -->
+                <div class="gallery-cell">
+                    <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?q=80&w=800&auto=format&fit=crop" alt="Artisan pouring water clean drop filter asset">
+                    <div class="gallery-spatial-card">
+                        <h3>The Slow Bar</h3>
+                        <p>Dedicated pour-over laboratory configured for critical evaluation.</p>
+                        <span class="gallery-link-indicator"><i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </div>
+
+                <!-- Unit 3: Molecular Press -->
+                <div class="gallery-cell">
+                    <img src="https://images.unsplash.com/photo-1507133750040-4a8f57021571?q=80&w=800&auto=format&fit=crop" alt="Espresso extraction fluid drop closeup asset">
+                    <div class="gallery-spatial-card">
+                        <h3>Molecular Press</h3>
+                        <p>Pressure profiling engines processing pristine micro-lot yields.</p>
+                        <span class="gallery-link-indicator"><i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </div>
+
+                <!-- Unit 4: The Obsidian Lounge (Wide Banner Block) -->
+                <div class="gallery-cell element-wide">
+                    <img src="https://images.unsplash.com/photo-1498804103079-a6351b050096?q=80&w=1200&auto=format&fit=crop" alt="Luxury minimal interior marble architecture asset">
+                    <div class="gallery-spatial-card">
+                        <h3>The Obsidian Lounge</h3>
+                        <p>Architectural minimalism built around custom imported premium Italian terrazzo tables.</p>
+                        <span class="gallery-link-indicator"><i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </div>
+
+                <!-- Unit 5: Cold Drip Craft -->
+                <div class="gallery-cell">
+                    <img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?q=80&w=800&auto=format&fit=crop" alt="Premium Cold Drip Craft Coffee">
+                    <div class="gallery-spatial-card">
+                        <h3>Cold Drip Craft</h3>
+                        <p>Slow cold-extracted pure essence, served over crystal clear ice geometric blocks.</p>
+                        <span class="gallery-link-indicator"><i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </div>
+
+                <!-- Unit 6: The Latte Lounge (Perfectly flush grid-closer item) -->
+                <div class="gallery-cell">
+                    <img src="https://images.unsplash.com/photo-1534778101976-62847782c213?q=80&w=800&auto=format&fit=crop" alt="Premium Espresso Latte Art">
+                    <div class="gallery-spatial-card">
+                        <h3>The Latte Lounge</h3>
+                        <p>Silky textured micro-foam poured over our signature dark espresso roast blend.</p>
+                        <span class="gallery-link-indicator"><i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Parallax Membership Promotion Segment -->
+    <section class="offers-banner">
+        <div class="parallax-bg"></div>
+        <div class="offers-overlay"></div>
+        <div class="container offers-content text-center">
+            <h3>Exclusive Privilege</h3>
+            <h2>The Connoisseur Membership Tier</h2>
+            <p>Join our private membership tier. Receive priority reservation privileges, complimentary custom micro-lot samples monthly, and invitations to private cupping sessions hosted by our Head Roaster.</p>
+            <a href="#contact" class="btn btn-gold">Request Credentials</a>
+        </div>
+    </section>
+
+    <!-- Hardware Accelerated Performance Stats -->
+    <section class="stats-section reveal">
+        <div class="container grid grid-4 text-center">
+            <div class="stat-item">
+                <div class="stat-icon"><i class="fas fa-mug-hot"></i></div>
+                <h2 class="stat-number" data-target="150">0</h2>
+                <p>Daily Kinetic Extractions</p>
+            </div>
+            <div class="stat-item">
+                <div class="stat-icon"><i class="fas fa-map-marked-alt"></i></div>
+                <h2 class="stat-number" data-target="24">0</h2>
+                <p>Exclusive Farm Origins</p>
+            </div>
+            <div class="stat-item">
+                <div class="stat-icon"><i class="fas fa-user-tie"></i></div>
+                <h2 class="stat-number" data-target="12">0</h2>
+                <p>In-House Master Q-Graders</p>
+            </div>
+            <div class="stat-item">
+                <div class="stat-icon"><i class="fas fa-heart"></i></div>
+                <h2 class="stat-number" data-target="99">0</h2>
+                <p>Sensory Satisfaction Ratio</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- User Testimonial Slider Canvas -->
+    <section id="testimonials" class="testimonials-section reveal">
+        <div class="container">
+            <div class="text-center">
+                <span class="section-tag">Global Critiques</span>
+                <h2 class="section-title">The Connoisseur's Verdict</h2>
+            </div>
+
+            <div class="slider-wrapper glass-card">
+                <div class="testimonials-slider" id="testimonial-slider">
+                    <div class="slide active">
+                        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                        <p class="testimonial-text">"May Caffeine isn't just a coffee shop; it's an elevated sensory escape. The Gold Velvet Latte is completely transcendent. The aesthetics alone rival luxury boutiques in Tokyo and Paris."</p>
+                        <div class="client-info">
+                            <h5>Victoria Sterling</h5>
+                            <span>Architectural Digest Journalist</span>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                        <p class="testimonial-text">"The Geisha Estate pour over here blew me away. Their baristas have an incredible technical mastery over ratios and temperature. Absolute destination for true specialty coffee pure bloods."</p>
+                        <div class="client-info">
+                            <h5>Marcus Vance</h5>
+                            <span>Coffee Quality Consultant</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="slider-controls">
+                    <button class="slider-arrow prev" id="slide-prev"><i class="fas fa-arrow-left"></i></button>
+                    <div class="slider-dots" id="slider-dots"></div>
+                    <button class="slider-arrow next" id="slide-next"><i class="fas fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Luxury FAQ System -->
+    <section class="faq-section reveal">
+        <div class="container">
+            <div class="text-center">
+                <span class="section-tag">Clarifications</span>
+                <h2 class="section-title">Answering The Curious</h2>
+            </div>
+
+            <div class="faq-container">
+                <div class="faq-item glass-card">
+                    <div class="faq-header">
+                        <h3>What exactly designates an extraction as a "Micro-Lot Reserve"?</h3>
+                        <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-body">
+                        <p>Micro-lot beans are sourced from a highly specific, isolated parcel of land on a farm. These lots are harvested by hand and processed completely independently because they exhibit spectacular, unique flavor traits that differentiate them from standard regional blends.</p>
+                    </div>
+                </div>
+                <div class="faq-item glass-card">
+                    <div class="faq-header">
+                        <h3>Do you execute custom roasting profiles for private retail allocations?</h3>
+                        <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-body">
+                        <p>Yes, we ship globally. To guarantee absolute maximum freshness, we roast to order every Tuesday and dispatch via climate-controlled express premium couriers within 24 hours of roasting.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Luxury Newsletter Component -->
+    <section class="newsletter-section reveal">
+        <div class="container glass-card text-center newsletter-wrapper">
+            <h2>Subscribe to The Extract Journal</h2>
+            <p>Periodic chronicles covering rare coffee arrivals, exclusive masterclass workshops, and member-only secret reserve drop announcements.</p>
+            <form id="newsletter-form" class="newsletter-form">
+                <input type="email" placeholder="Enter your enterprise mail register" required id="newsletter-email">
+                <button type="submit" class="btn btn-primary">Join Roster</button>
+            </form>
+            <span id="newsletter-message" class="form-feedback"></span>
+        </div>
+    </section>
+
+    <!-- Integrated Location Mapping & Communication Channels -->
+    <section id="contact" class="contact-section reveal">
+        <div class="container grid grid-2">
+            <div class="glass-card contact-card">
+                <h3>Initiate Spatial Booking</h3>
+                <p>Coordinate table allocations or private sensory cupping requests directly with our operations staff.</p>
+                
+                <form id="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="contact-name" placeholder="Full Name" required autocomplete="off">
+                        <span class="error-msg">Identifier string required.</span>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="contact-email" placeholder="Secure Mail Address" required autocomplete="off">
+                        <span class="error-msg">Provide valid cryptographic mail syntax.</span>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="contact-message" rows="5" placeholder="Operational Parameters / Request Notes" required autocomplete="off"></textarea>
+                        <span class="error-msg">Message vector cannot pass blank parameters.</span>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Transmit Direct Inbound</button>
+                </form>
+                <div id="contact-success" class="form-feedback success"></div>
+            </div>
+
+            <div class="contact-info-panel">
+                <div class="glass-card address-box">
+                    <h4>The Roastery Compound</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> 742 Obsidian Boulevard, Level 4, Luxury Quarter</p>
+                    <p><i class="fas fa-phone"></i> +1 (800) CAFFEINE</p>
+                    <p><i class="fas fa-envelope"></i> concierge@maycaffeine.com</p>
+                </div>
+                <div class="map-placeholder glass-card">
+                    <div class="map-mock-bg">
+                        <i class="fas fa-map-location-dot map-icon"></i>
+                        <span>Satellite Spatial Engines Online</span>
+                        <p>742 Obsidian Boulevard, Level 4, Luxury Quarter</p>
+                        <button class="btn btn-secondary btn-sm">Instantiate Navigation</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Premium Footer Matrix -->
+    <footer class="footer">
+        <div class="container grid grid-4">
+            <div class="footer-brand">
+                <a href="#" class="logo">May <span>Caffeine</span></a>
+                <p class="footer-tagline">Pure extraction. Absolute symmetry.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Instagram Link Portfolio"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Facebook Link Profile"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="X Platform Channel"><i class="fab fa-x-twitter"></i></a>
+                </div>
+            </div>
+            <div>
+                <h4>The House</h4>
+                <ul class="footer-links">
+                    <li><a href="#about">Our Story</a></li>
+                    <li><a href="#menu">Reserve Menu</a></li>
+                    <li><a href="#">The Roastery</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Operation Framework</h4>
+                <ul class="footer-links hours">
+                    <li><span>Mon - Fri:</span> 07:00 AM - 09:00 PM</li>
+                    <li><span>Sat - Sun:</span> 08:00 AM - 10:00 PM</li>
+                </ul>
+            </div>
+            <div>
+                <h4>Compliance Data</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Privacy Charter</a></li>
+                    <li><a href="#">Sourcing Registry</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom text-center">
+            <p>&copy; 2026 May Caffeine. Built with Artisan Code Integrity.</p>
+        </div>
+    </footer>
+
+    <!-- Hardware Back To Top Scroll Anchor -->
+    <button id="back-to-top" aria-label="Scroll Return To Zenith Line">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
